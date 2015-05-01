@@ -14,7 +14,6 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir[
     "app/assets/javascripts/avi_theme.js",
-    "vendor/assets/javascripts/bootstrap.js"
   ]
   spec.require_paths = ["lib"]
 
