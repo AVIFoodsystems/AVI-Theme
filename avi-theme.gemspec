@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = ""
   spec.license       = "AVI"
 
-  spec.files         = `git ls-files -z`.split("\x0")
+  spec.files = Dir["vendor/javascripts/*.js"]
   spec.require_paths = ["lib"]
 
   spec.add_dependency "railties", "~> 3.1"
