@@ -12,7 +12,10 @@ Gem::Specification.new do |spec|
   spec.homepage      = ""
   spec.license       = "AVI"
 
-  spec.files = Dir["vendor/assets/javascripts/bootstrap.js"]
+  spec.files = Dir[
+    "app/assets/javascripts/avi_theme.js",
+    "vendor/assets/javascripts/bootstrap.js"
+  ]
   spec.require_paths = ["lib"]
 
   spec.add_dependency "railties", "~> 3.1"
