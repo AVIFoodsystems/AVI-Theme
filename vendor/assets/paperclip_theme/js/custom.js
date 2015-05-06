@@ -26,7 +26,7 @@ $('ul.dropdown-menu a[data-toggle=dropdown]').hover(function() {
   var menu = $(this).parent().find("ul");
   var menupos = menu.offset();
   if ((menupos.left + menu.width()) + 30 > $(window).width()) {
-    $(this).parent().addClass('pull-left');   
+    $(this).parent().addClass('pull-left');
   }
   return false;
 });
