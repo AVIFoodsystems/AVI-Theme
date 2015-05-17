@@ -29,6 +29,30 @@ html, body {
   padding-bottom: 379px; /* footer height + margin */
 }
 
+/* ===== Custom AVI Styles ==== */
+#menu { display: none; }
+#user-widget {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  i {
+    color: @primary-color;
+  }
+}
+#news-feed {
+  margin-left: 0px; padding-left: 0px;
+  i { color: @secondary-color; }
+  li { list-style-type: none; }
+}
+footer h4 i.fa {
+  background-color: @primary-color;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
 /* ===== Homepage Slider ===== */
 
 .home-slider {
@@ -468,12 +492,6 @@ html, body {
     &:before {
       color: #FFF;
     }
-  }
-  &:before {
-    font-family: FontAwesome;
-    content: "\f02b";
-    color: #999;
-    margin-right: 5px;
   }
 }
 
