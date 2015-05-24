@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir[
     'app/assets/javascripts/avi_theme.js',
     'app/assets/stylesheets/avi_theme.css',
+    'app/assets/images/*',
   ]
   spec.require_paths = ['lib']
 
