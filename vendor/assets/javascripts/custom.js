@@ -50,6 +50,13 @@ $(function() {
     e.text(ago);
   });
 
+  /* ===== Side Body Sizing ==== */
+  var row = $('<div class="row"></div>');
+  var bodyContent = $('#body_content');
+  bodyContent.append(row);
+  bodyContent.find('#body').addClass('col-sm-9');
+  bodyContent.find('#side_body').addClass('col-sm-3');
+
   /**
   * Dropdown submenu positioning (left or right)
   */
