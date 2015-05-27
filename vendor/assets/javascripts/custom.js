@@ -39,6 +39,7 @@ $(function() {
     ul.addClass('dropdown-menu');
     ul.closest('li').addClass('dropdown-submenu');
   });
+  $("#menu .dropdown-menu").css('width', '300px');
   $("#menu").show();
 
   /* ===== Time Ago ===== */
