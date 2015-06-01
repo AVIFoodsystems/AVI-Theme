@@ -16,32 +16,6 @@ $(function() {
     return false;
   });
 
-  /* ===== Navbar Submenu ===== */
-
-  /**
-  * Modify Refinery Menu
-  */
-  $('#menu ul:first').addClass('nav navbar-nav navbar-right');
-  $('#menu ul:first > li').has('ul').each(function(i, li) {
-    var li = $(li);
-    li.addClass('dropdown');
-    var a = li.find('a:first');
-    li.find('a:first')
-    a.addClass('dropdown-toggle')
-      .attr('data-toggle', 'dropdown')
-      .append('<b class="caret"></b>');
-    var ul = li.find('ul:first');
-    ul.addClass('dropdown-menu')
-      .prepend("<li><a href='" + a.attr('href') + "'>" + a.text() + "</a></li>");
-  });
-  $('#menu .dropdown-menu ul').each(function(i, ul) {
-    var ul = $(ul);
-    ul.addClass('dropdown-menu');
-    ul.closest('li').addClass('dropdown-submenu');
-  });
-  $("#menu .dropdown-menu").css('width', '300px');
-  $("#menu").show();
-
   /* ===== Time Ago ===== */
   $('.moment-ago').each(function(i, e) {
     var e = $(e);
@@ -50,15 +24,6 @@ $(function() {
     var ago = then.from(now);
     e.text(ago);
   });
-
-  /* ===== Side Body Sizing ==== */
-  var row = $('<div class="row"></div>');
-  var bodyContent = $('#body_content');
-  if ($('#body, #side_body').size() == 2) {
-    bodyContent.append(row);
-    bodyContent.find('#body').addClass('col-sm-9');
-    bodyContent.find('#side_body').addClass('col-sm-3');
-  }
 
   /**
   * Dropdown submenu positioning (left or right)
