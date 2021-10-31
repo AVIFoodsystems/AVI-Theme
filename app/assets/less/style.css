@@ -6758,7 +6758,7 @@ hr.arrow-down:after {
 }
 .opacity-100 {
   opacity: 100%;
-  filter: alpha(opacity=10000%);
+  filter: alpha(opacity=100);
 }
 .opacity-0 {
   opacity: 0;
